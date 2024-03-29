@@ -3,4 +3,4 @@ Esta página explica de forma simples e direta alguns aspectos fundamentais da s
 
 ![image](/assets/img.png)
 
-link para acesso: 
+link para acesso: https://walterhml.github.io/Python-Syntax-Explorer/
