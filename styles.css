@@ -1,0 +1,134 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Estilo para o código Python */
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.token.keyword {
+    color: #0077aa;
+    font-weight: bold;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #999988;
+}
+
+.token.string,
+.token.attr-value {
+    color: #22aa22;
+}
+
+.token.punctuation {
+    color: #555;
+}
+
+.token.operator {
+    color: #a67f59;
+}
+
+.token.number {
+    color: #337799;
+}
+
+.token.function {
+    color: #dd8844;
+}
+
+.token.namespace {
+    opacity: 0.7;
+}
+
+.token.tag,
+.token.selector,
+.token.doctype,
+.token.builtin {
+    color: #22aa22;
+}
+
+.token.constant,
+.token.symbol {
+    color: #990055;
+}
+
+.token.variable {
+    color: #aa6600;
+}

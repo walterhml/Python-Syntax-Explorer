@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Syntax Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <h1>Python Syntax Explorer</h1>
+    </header>
+    <main class="container">
+        <section id="step-1">
+            <h2>Passo 1: Variáveis e Tipos de Dados</h2>
+            <p>Em Python, você pode declarar variáveis e atribuir valores a elas.</p>
+            <pre><code class="language-python">
+# Exemplo de declaração de variáveis
+nome = "Alice"
+idade = 30
+altura = 1.75
+eh_estudante = True</code></pre>
+        </section>
+        <section id="step-13">
+            <h2>Números, Strings e Operadores</h2>
+            <p>Python oferece suporte a uma variedade de tipos de dados, incluindo números e strings.</p>
+            <p>Operadores lógicos e condicionais são amplamente utilizados para controlar o fluxo de um programa.</p>
+            <pre><code class="language-python">
+# Exemplos de números
+inteiro = 10
+flutuante = 3.14
+complexo = 2 + 3j
+
+# Exemplos de strings
+texto = "Olá, mundo!"
+caractere = 'a'
+
+# Operadores lógicos e condicionais
+a = 5
+b = 3
+
+# Operadores aritméticos
+soma = a + b
+subtracao = a - b
+multiplicacao = a * b
+divisao = a / b
+
+# Operadores lógicos
+e_logico = (a > 0) and (b < 5)
+ou_logico = (a > 0) or (b > 5)
+nao_logico = not (a == b)
+
+# Operadores condicionais
+if a > b:
+    print("a é maior que b")
+elif a == b:
+    print("a é igual a b")
+else:
+    print("a é menor que b")</code></pre>
+            <p>Este exemplo demonstra diferentes tipos de números, como inteiros, flutuantes e complexos, bem como manipulação de strings e exemplos de operadores aritméticos, lógicos e condicionais em Python.</p>
+        </section>
+        <section id="step-2">
+            <h2>Passo 2: Estruturas de Controle</h2>
+            <p>Python suporta estruturas de controle, como condicionais e loops.</p>
+            <pre><code class="language-python">
+# Exemplo de estrutura condicional
+if idade >= 18:
+    print("Você é maior de idade")
+else:
+    print("Você é menor de idade")
+
+# Exemplo de loop
+for i in range(5):
+    print(i)</code></pre>
+        </section>
+
+        <section id="step-3">
+            <h2>Passo 3: Funções</h2>
+            <p>Funções permitem agrupar código para reutilização.</p>
+            <pre><code class="language-python">
+# Exemplo de função
+def saudacao(nome):
+    return "Olá, " + nome
+
+print(saudacao("Carlos"))</code></pre>
+        </section>
+
+        <section id="step-4">
+            <h2>Passo 4: Listas e Dicionários</h2>
+            <p>Python oferece estruturas de dados como listas e dicionários.</p>
+            <pre><code class="language-python">
+# Exemplo de lista
+cores = ['vermelho', 'verde', 'azul']
+
+# Exemplo de dicionário
+pessoa = {'nome': 'João', 'idade': 25}</code></pre>
+        </section>
+
+        <section id="step-5">
+            <h2>Passo 5: Módulos e Bibliotecas</h2>
+            <p>Python possui uma grande variedade de módulos e bibliotecas.</p>
+            <pre><code class="language-python">
+# Importando um módulo
+import math
+
+# Usando funções do módulo math
+print(math.sqrt(16))</code></pre>
+        </section>
+
+        <section id="step-6">
+            <h2>Passo 6: Manipulação de Arquivos</h2>
+            <p>Python pode ler e escrever em arquivos de várias formas.</p>
+            <pre><code class="language-python">
+# Escrevendo em um arquivo
+with open('exemplo.txt', 'w') as arquivo:
+    arquivo.write('Olá, mundo!')
+
+# Lendo de um arquivo
+with open('exemplo.txt', 'r') as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)</code></pre>
+        </section>
+
+        <section id="step-7">
+            <h2>Passo 7: Exceções e Tratamento de Erros</h2>
+            <p>Python permite lidar com exceções de forma elegante.</p>
+            <pre><code class="language-python">
+# Exemplo de tratamento de erro
+try:
+    resultado = 10 / 0
+except ZeroDivisionError:
+    print("Erro: divisão por zero!")</code></pre>
+        </section>
+
+        <section id="step-8">
+            <h2>Passo 8: Orientação a Objetos</h2>
+            <p>Python suporta programação orientada a objetos.</p>
+            <pre><code class="language-python">
+# Exemplo de classe
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def saudacao(self):
+        return "Olá, meu nome é " + self.nome
+
+# Criando uma instância da classe Pessoa
+pessoa1 = Pessoa("Ana", 30)
+print(pessoa1.saudacao())</code></pre>
+        </section>
+
+        <section id="step-8">
+            <h2>Passo 8: Orientação a Objetos (Continuação)</h2>
+            <p>Python suporta herança, encapsulamento e polimorfismo.</p>
+            <pre><code class="language-python">
+# Exemplo de herança
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def som(self):
+        pass
+
+class Cachorro(Animal):
+    def som(self):
+        return "Au au!"
+
+class Gato(Animal):
+    def som(self):
+        return "Miau!"
+
+# Criando instâncias das subclasses
+rex = Cachorro("Rex")
+print(rex.som())
+
+garfield = Gato("Garfield")
+print(garfield.som())</code></pre>
+        </section>
+
+        <section id="step-9">
+            <h2>Passo 9: Métodos Especiais (Mágicos)</h2>
+            <p>Python possui métodos especiais para funcionalidades especiais.</p>
+            <pre><code class="language-python">
+class Numero:
+    def __init__(self, valor):
+        self.valor = valor
+
+    def __add__(self, outro):
+        return self.valor + outro.valor
+
+    def __str__(self):
+        return str(self.valor)
+
+# Criando instâncias da classe Numero
+numero1 = Numero(5)
+numero2 = Numero(10)
+
+print(numero1 + numero2)  # Saída: 15</code></pre>
+        </section>
+
+        <section id="step-10">
+            <h2>Passo 10: Decoradores</h2>
+            <p>Decoradores são funções que modificam o comportamento de outras funções.</p>
+            <pre><code class="language-python">
+# Exemplo de decorador
+def decorador(funcao):
+    def wrapper():
+        print("Antes da chamada da função")
+        funcao()
+        print("Depois da chamada da função")
+    return wrapper
+
+@decorador
+def funcao_decorada():
+    print("Função decorada")
+
+funcao_decorada()</code></pre>
+        </section>
+
+
+        <section id="step-11">
+            <h2>Passo 11: Servidor e Requisição</h2>
+            <p>Python pode ser utilizado para criar servidores e responder a requisições HTTP.</p>
+            <pre><code class="language-python">
+# Exemplo de servidor HTTP com Flask
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Olá, mundo!'
+
+if __name__ == '__main__':
+    app.run(debug=True)</code></pre>
+            <p>Este exemplo utiliza o framework Flask para criar um servidor HTTP simples que responde à requisição na rota raiz ("/") com a mensagem "Olá, mundo!".</p>
+            <p>Você pode instalar o Flask utilizando o comando <code>pip install flask</code>.</p>
+        </section>
+
+        <section id="step-12">
+            <h2>Passo 12: Automação e Teste de Software</h2>
+            <p>Python é amplamente utilizado para automação de tarefas e teste de software.</p>
+            <pre><code class="language-python">
+# Exemplo de automação de tarefas
+import os
+
+def listar_arquivos(diretorio):
+    for raiz, diretorios, arquivos in os.walk(diretorio):
+        for arquivo in arquivos:
+            print(os.path.join(raiz, arquivo))
+
+# Listar arquivos em um diretório
+listar_arquivos('/caminho/do/diretorio')</code></pre>
+            <p>Este exemplo utiliza o módulo <code>os</code> para listar todos os arquivos em um diretório.</p>
+            <p>Além disso, Python também é utilizado para escrever testes automatizados. Aqui está um exemplo usando o módulo <code>unittest</code>:</p>
+            <pre><code class="language-python">
+# Exemplo de teste automatizado
+import unittest
+
+def somar(a, b):
+    return a + b
+
+class TesteSoma(unittest.TestCase):
+    def test_soma_positiva(self):
+        self.assertEqual(somar(3, 5), 8)
+
+    def test_soma_negativa(self):
+        self.assertEqual(somar(-3, -5), -8)
+
+if __name__ == '__main__':
+    unittest.main()</code></pre>
+            <p>Neste exemplo, criamos testes para a função <code>somar</code> usando o módulo <code>unittest</code>.</p>
+        </section>
+
+        <section id="step-14">
+            <h2>Passo 13: Exemplo de Aplicação de Gerenciamento de Estoque</h2>
+            <p>Neste exemplo, vamos criar uma aplicação de gerenciamento de estoque para uma loja fictícia.</p>
+            <p>Usaremos classes para representar produtos, métodos para adicionar estoque e vender produtos, e uma função principal para testar nossa aplicação.</p>
+            <pre><code class="language-python">
+# Módulo de gerenciamento de estoque
+
+class Produto:
+    def __init__(self, nome, preco, quantidade):
+        self.nome = nome
+        self.preco = preco
+        self.quantidade = quantidade
+
+    def __str__(self):
+        return f"{self.nome} - R${self.preco:.2f} ({self.quantidade} em estoque)"
+
+    def adicionar_estoque(self, quantidade):
+        self.quantidade += quantidade
+        print(f"{quantidade} unidades de {self.nome} adicionadas ao estoque.")
+
+    def vender(self, quantidade):
+        if self.quantidade >= quantidade:
+            self.quantidade -= quantidade
+            print(f"{quantidade} unidades de {self.nome} vendidas.")
+        else:
+            print("Quantidade insuficiente em estoque.")
+
+# Função principal
+def main():
+    # Criando alguns produtos
+    produto1 = Produto("Camiseta", 29.99, 50)
+    produto2 = Produto("Calça Jeans", 59.99, 30)
+    produto3 = Produto("Tênis", 99.99, 20)
+
+    # Exibindo informações dos produtos
+    print("Produtos disponíveis:")
+    print(produto1)
+    print(produto2)
+    print(produto3)
+
+    # Adicionando estoque e vendendo produtos
+    produto1.adicionar_estoque(10)
+    produto1.vender(5)
+    produto2.vender(40)
+
+if __name__ == "__main__":
+    main()</code></pre>
+            <p>Neste exemplo, criamos uma classe `Produto` que representa um item do estoque, com atributos como nome, preço e quantidade em estoque. Também implementamos métodos para adicionar estoque e vender produtos. Na função principal (`main()`), criamos alguns produtos, exibimos suas informações, adicionamos estoque e vendemos produtos.</p>
+        </section>
+
+
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Python Syntax Explorer</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</body>
+</html>
